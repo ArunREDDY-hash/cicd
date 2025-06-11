@@ -79,8 +79,8 @@ jobs:
        
       - name: Build and Push Docker Image
         run: |
-          #docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-hello-world:latest .
-          #docker push ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-hello-world:v1
+          #docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/arunk540/arundockerrepo:latest .
+          #docker push ${{ secrets.DOCKERHUB_USERNAME }}/arunk540/arundockerrepod:v1
           docker build -t rahulhbc/nodejs-hello-world:v1 -f assessment/Dockerfile assessment/
           docker push rahulhbc/nodejs-hello-world:v1
           
